@@ -15,1123 +15,255 @@
   </div>
 
   <div class="main-container">
-    <div class="upper-deck">
-      <div class="row1">
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[0].Booked_status"
-              [class.disabled-checkbox]="selected_bus[0].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[0].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[0].Seat_No,
-                    selected_bus[0].Seat_type,
-                    selected_bus[0]
-                  )
-                "
-                [disabled]="selected_bus[0].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[0]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[0].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[1].Booked_status"
-              [class.disabled-checkbox]="selected_bus[1].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[1].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[1].Seat_No,
-                    selected_bus[1].Seat_type,
-                    selected_bus[1]
-                  )
-                "
-                [disabled]="selected_bus[1].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[1]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[1].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[2].Booked_status"
-              [class.disabled-checkbox]="selected_bus[2].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[2].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[2].Seat_No,
-                    selected_bus[2].Seat_type,
-                    selected_bus[2]
-                  )
-                "
-                [disabled]="selected_bus[2].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[2]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[2].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[3].Booked_status"
-              [class.disabled-checkbox]="selected_bus[3].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[3].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[3].Seat_No,
-                    selected_bus[3].Seat_type,
-                    selected_bus[3]
-                  )
-                "
-                [disabled]="selected_bus[3].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[3]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[3].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[4].Booked_status"
-              [class.disabled-checkbox]="selected_bus[4].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[4].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[4].Seat_No,
-                    selected_bus[4].Seat_type,
-                    selected_bus[4]
-                  )
-                "
-                [disabled]="selected_bus[4].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[4]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[4].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[5].Booked_status"
-              [class.disabled-checkbox]="selected_bus[5].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[5].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[5].Seat_No,
-                    selected_bus[5].Seat_type,
-                    selected_bus[5]
-                  )
-                "
-                [disabled]="selected_bus[5].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[5]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[5].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
+    <div class="lower">
+      <div>
+        <div class="row11" *ngFor="let seat of selected_bus; let i = index">
+          <div
+            class="checkbox-container"
+            *ngIf="seat.Seat_type === 'seater' && i <= 5"
+          >
+            <div class="sub">
+              <label
+                class="custom-checkbox seat-info"
+                [class.checked]="seat.Booked_status"
+                [class.disabled-checkbox]="seat.Booked_status"
+              >
+                <input
+                  type="checkbox"
+                  [value]="seat.BusNo"
+                  name="selectedItems"
+                  (change)="isSelected(seat.Seat_No, seat.Seat_type, seat)"
+                  [disabled]="seat.Booked_status"
+                />
+                <img
+                  src="./assets/seater.png"
+                  alt="Seat"
+                  [ngStyle]="{
+                    border: this.female_color[i]
+                      ? '3px
+                  solid pink'
+                      : 'none'
+                  }"
+                  [style.border]="
+                    this.selectedState[seat.Seat_No]
+                      ? '2px solid black'
+                      : 'none'
+                  "
+                />
+                <span class="seat-number">{{ seat.Seat_No }}</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row2">
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[6].Booked_status"
-              [class.disabled-checkbox]="selected_bus[6].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[6].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[6].Seat_No,
-                    selected_bus[6].Seat_type,
-                    selected_bus[6]
-                  )
-                "
-                [disabled]="selected_bus[6].Booked_status"
-              />
+      <div>
+        <div class="row12" *ngFor="let seat of selected_bus; let i = index">
+          <div
+            class="checkbox-container seat-info"
+            *ngIf="seat.Seat_type === 'seater' && i <= 11 && i >= 6"
+          >
+            <div class="sub">
+              <label
+                class="custom-checkbox"
+                [class.checked]="seat.Booked_status"
+                [class.disabled-checkbox]="seat.Booked_status"
+              >
+                <input
+                  type="checkbox"
+                  [value]="seat.BusNo"
+                  name="selectedItems"
+                  (change)="isSelected(seat.Seat_No, seat.Seat_type, seat)"
+                  [disabled]="seat.Booked_status"
+                />
 
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[6]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[6].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[7].Booked_status"
-              [class.disabled-checkbox]="selected_bus[7].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[7].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[7].Seat_No,
-                    selected_bus[7].Seat_type,
-                    selected_bus[7]
-                  )
-                "
-                [disabled]="selected_bus[7].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[7]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[7].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[8].Booked_status"
-              [class.disabled-checkbox]="selected_bus[8].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[8].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[8].Seat_No,
-                    selected_bus[8].Seat_type,
-                    selected_bus[8]
-                  )
-                "
-                [disabled]="selected_bus[8].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[8]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[8].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[9].Booked_status"
-              [class.disabled-checkbox]="selected_bus[9].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[9].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[9].Seat_No,
-                    selected_bus[9].Seat_type,
-                    selected_bus[9]
-                  )
-                "
-                [disabled]="selected_bus[9].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[9]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[9].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[10].Booked_status"
-              [class.disabled-checkbox]="selected_bus[10].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[10].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[10].Seat_No,
-                    selected_bus[10].Seat_type,
-                    selected_bus[10]
-                  )
-                "
-                [disabled]="selected_bus[10].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[10]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[10].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[11].Booked_status"
-              [class.disabled-checkbox]="selected_bus[11].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[11].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[11].Seat_No,
-                    selected_bus[11].Seat_type,
-                    selected_bus[11]
-                  )
-                "
-                [disabled]="selected_bus[11].Booked_status"
-              />
-
-              <img
-                src="./assets/seater.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[11]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[11].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
+                <img
+                  src="./assets/seater.png"
+                  alt="Seat"
+                  [ngStyle]="{
+                    border: this.female_color[i]
+                      ? '3px
+                    solid pink'
+                      : 'none'
+                  }"
+                  [style.border]="
+                    this.selectedState[seat.Seat_No]
+                      ? '2px solid black'
+                      : 'none'
+                  "
+                />
+                <span class="seat-number">{{ seat.Seat_No }}</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row3">
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[12].Booked_status"
-              [class.disabled-checkbox]="selected_bus[12].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[12].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[12].Seat_No,
-                    selected_bus[12].Seat_type,
-                    selected_bus[12]
-                  )
-                "
-                [disabled]="selected_bus[12].Booked_status"
-              />
+      <div>
+        <div class="row13" *ngFor="let seat of selected_bus; let i = index">
+          <div
+            class="checkbox-container"
+            *ngIf="seat.Seat_type === 'sleeper_lower' && i <= 15 && i >= 12"
+          >
+            <div class="sub">
+              <label
+                class="custom-checkbox seat-info"
+                [class.checked]="seat.Booked_status"
+                [class.disabled-checkbox]="seat.Booked_status"
+              >
+                <input
+                  type="checkbox"
+                  [value]="seat.BusNo"
+                  name="selectedItems"
+                  (change)="isSelected(seat.Seat_No, seat.Seat_type, seat)"
+                  [disabled]="seat.Booked_status"
+                />
 
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[12]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[12].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[13].Booked_status"
-              [class.disabled-checkbox]="selected_bus[13].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[13].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[13].Seat_No,
-                    selected_bus[13].Seat_type,
-                    selected_bus[13]
-                  )
-                "
-                [disabled]="selected_bus[13].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[13]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[13].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[14].Booked_status"
-              [class.disabled-checkbox]="selected_bus[14].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[14].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[14].Seat_No,
-                    selected_bus[14].Seat_type,
-                    selected_bus[14]
-                  )
-                "
-                [disabled]="selected_bus[14].Booked_status"
-                id="S1"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[14]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[14].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[15].Booked_status"
-              [class.disabled-checkbox]="selected_bus[15].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[15].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[15].Seat_No,
-                    selected_bus[15].Seat_type,
-                    selected_bus[15]
-                  )
-                "
-                [disabled]="selected_bus[15].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[15]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[15].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
+                <img
+                  src="./assets/seat4.png"
+                  alt="Seat"
+                  [ngStyle]="{
+                    border: this.female_color[i]
+                      ? '3px
+                    solid pink'
+                      : 'none'
+                  }"
+                  [style.border]="
+                    this.selectedState[seat.Seat_No]
+                      ? '2px solid black'
+                      : 'none'
+                  "
+                />
+                <span class="seat-number1">{{ seat.Seat_No }}</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="lower-deck">
-      <div class="row4">
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[16].Booked_status"
-              [class.disabled-checkbox]="selected_bus[16].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[16].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[16].Seat_No,
-                    selected_bus[16].Seat_type,
-                    selected_bus[16]
-                  )
-                "
-                [disabled]="selected_bus[16].Booked_status"
-              />
+    <div class="upper">
+      <div>
+        <div class="row1" *ngFor="let seat of selected_bus; let i = index">
+          <div
+            class="checkbox-container"
+            *ngIf="seat.Seat_type === 'sleeper_upper' && i >= 16 && i <= 19"
+          >
+            <div class="sub">
+              <label
+                class="custom-checkbox seat-info"
+                [class.checked]="seat.Booked_status"
+                [class.disabled-checkbox]="seat.Booked_status"
+              >
+                <input
+                  type="checkbox"
+                  [value]="seat.BusNo"
+                  name="selectedItems"
+                  (change)="isSelected(seat.Seat_No, seat.Seat_type, seat)"
+                  [disabled]="seat.Booked_status"
+                />
 
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[16]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[16].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[17].Booked_status"
-              [class.disabled-checkbox]="selected_bus[17].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[17].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[17].Seat_No,
-                    selected_bus[17].Seat_type,
-                    selected_bus[17]
-                  )
-                "
-                [disabled]="selected_bus[17].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[17]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[17].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[18].Booked_status"
-              [class.disabled-checkbox]="selected_bus[18].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[18].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[18].Seat_No,
-                    selected_bus[18].Seat_type,
-                    selected_bus[18]
-                  )
-                "
-                [disabled]="selected_bus[18].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[18]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[18].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[19].Booked_status"
-              [class.disabled-checkbox]="selected_bus[19].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[19].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[19].Seat_No,
-                    selected_bus[19].Seat_type,
-                    selected_bus[19]
-                  )
-                "
-                [disabled]="selected_bus[19].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[19]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[19].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
+                <img
+                  src="./assets/seat4.png"
+                  alt="Seat"
+                  [ngStyle]="{
+                    border: this.female_color[i]
+                      ? '3px
+                  solid pink'
+                      : 'none'
+                  }"
+                  [style.border]="
+                    this.selectedState[seat.Seat_No]
+                      ? '2px solid black'
+                      : 'none'
+                  "
+                />
+                <span class="seat-number1">{{ seat.Seat_No }}</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row5">
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[20].Booked_status"
-              [class.disabled-checkbox]="selected_bus[20].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[20].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[20].Seat_No,
-                    selected_bus[20].Seat_type,
-                    selected_bus[20]
-                  )
-                "
-                [disabled]="selected_bus[20].Booked_status"
-              />
+      <div>
+        <div class="row2" *ngFor="let seat of selected_bus; let i = index">
+          <div
+            class="checkbox-container"
+            *ngIf="seat.Seat_type === 'sleeper_upper' && i <= 23 && i >= 20"
+          >
+            <div class="sub">
+              <label
+                class="custom-checkbox seat-info"
+                [class.checked]="seat.Booked_status"
+                [class.disabled-checkbox]="seat.Booked_status"
+              >
+                <input
+                  type="checkbox"
+                  [value]="seat.BusNo"
+                  name="selectedItems"
+                  (change)="isSelected(seat.Seat_No, seat.Seat_type, seat)"
+                  [disabled]="seat.Booked_status"
+                />
 
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[20]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[20].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[21].Booked_status"
-              [class.disabled-checkbox]="selected_bus[21].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[21].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[21].Seat_No,
-                    selected_bus[21].Seat_type,
-                    selected_bus[21]
-                  )
-                "
-                [disabled]="selected_bus[21].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[21]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[21].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[22].Booked_status"
-              [class.disabled-checkbox]="selected_bus[22].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[22].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[22].Seat_No,
-                    selected_bus[22].Seat_type,
-                    selected_bus[22]
-                  )
-                "
-                [disabled]="selected_bus[22].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[22]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[22].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[23].Booked_status"
-              [class.disabled-checkbox]="selected_bus[23].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[23].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[23].Seat_No,
-                    selected_bus[23].Seat_type,
-                    selected_bus[23]
-                  )
-                "
-                [disabled]="selected_bus[23].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[23]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[23].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
+                <img
+                  src="./assets/seat4.png"
+                  alt="Seat"
+                  [ngStyle]="{
+                    border: this.female_color[i]
+                      ? '3px
+                    solid pink'
+                      : 'none'
+                  }"
+                  [style.border]="
+                    this.selectedState[seat.Seat_No]
+                      ? '2px solid black'
+                      : 'none'
+                  "
+                />
+                <span class="seat-number1">{{ seat.Seat_No }}</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row6">
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[24].Booked_status"
-              [class.disabled-checkbox]="selected_bus[24].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[24].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[24].Seat_No,
-                    selected_bus[24].Seat_type,
-                    selected_bus[24]
-                  )
-                "
-                [disabled]="selected_bus[24].Booked_status"
-              />
+      <div>
+        <div class="row3" *ngFor="let seat of selected_bus; let i = index">
+          <div
+            class="checkbox-container"
+            *ngIf="seat.Seat_type === 'sleeper_upper' && i <= 27 && i >= 24"
+          >
+            <div class="sub">
+              <label
+                class="custom-checkbox seat-info"
+                [class.checked]="seat.Booked_status"
+                [class.disabled-checkbox]="seat.Booked_status"
+              >
+                <input
+                  type="checkbox"
+                  [value]="seat.BusNo"
+                  name="selectedItems"
+                  (change)="isSelected(seat.Seat_No, seat.Seat_type, seat)"
+                  [disabled]="seat.Booked_status"
+                />
 
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[24]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[24].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[25].Booked_status"
-              [class.disabled-checkbox]="selected_bus[25].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[25].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[25].Seat_No,
-                    selected_bus[25].Seat_type,
-                    selected_bus[25]
-                  )
-                "
-                [disabled]="selected_bus[25].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[25]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[25].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[26].Booked_status"
-              [class.disabled-checkbox]="selected_bus[26].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[26].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[26].Seat_No,
-                    selected_bus[26].Seat_type,
-                    selected_bus[26]
-                  )
-                "
-                [disabled]="selected_bus[26].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[26]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[26].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-              />
-            </label>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="sub">
-            <label
-              class="custom-checkbox"
-              [class.checked]="selected_bus[27].Booked_status"
-              [class.disabled-checkbox]="selected_bus[27].Booked_status"
-            >
-              <input
-                type="checkbox"
-                [value]="selected_bus[27].BusNo"
-                name="selectedItems"
-                (change)="
-                  isSelected(
-                    selected_bus[27].Seat_No,
-                    selected_bus[27].Seat_type,
-                    selected_bus[27]
-                  )
-                "
-                [disabled]="selected_bus[27].Booked_status"
-              />
-
-              <img
-                src="./assets/seat2.png"
-                alt="Seat"
-                [ngStyle]="{
-                  border: this.female_color[27]
-                    ? '3px
-                solid pink'
-                    : 'none'
-                }"
-                [style.border]="
-                  this.selectedState[selected_bus[27].Seat_No]
-                    ? '2px solid black'
-                    : 'none'
-                "
-                [style.background-color]="
-                  isFemaleBooked(selected_bus[27]) ? 'pink' : ''
-                "
-              />
-            </label>
+                <img
+                  src="./assets/seat4.png"
+                  alt="Seat"
+                  [ngStyle]="{
+                    border: this.female_color[i]
+                      ? '3px
+                    solid pink'
+                      : 'none'
+                  }"
+                  [style.border]="
+                    this.selectedState[seat.Seat_No]
+                      ? '2px solid black'
+                      : 'none'
+                  "
+                />
+                <span class="seat-number1">{{ seat.Seat_No }}</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    &nbsp;
-
-    <button class="aaa" type="submit" (click)="displaySelectedItems()">
-      Submit
-    </button>
   </div>
 </div>
 
@@ -1140,7 +272,7 @@
     <div class="form-container">
       <p>Total Cost:{{ Cost }}</p>
       <form (ngSubmit)="onSubmit(myForm)">
-        <div [formGroup]="myForm">
+        <div [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
           <div class="main" *ngFor="let obj of select">
             <p>Seat No:{{ obj.Seat_No }}</p>
 
@@ -1157,25 +289,39 @@
                 Name should only contain letters and spaces.
               </div>
             </div>
-            <div>
+            <div class="gender">
               <div *ngIf="!obj.only_female">
-                <label for="male">Male</label>
-                <input
-                  type="radio"
-                  id="male"
-                  formControlName="gender"
-                  value="male"
-                />
-              </div>
+                <div>
+                  <label for="male">Male</label>
+                  <input
+                    type="radio"
+                    id="male"
+                    formControlName="gender"
+                    value="male"
+                  />
+                </div>
 
-              <label for="female">Female</label>
-              <div>
-                <input
-                  type="radio"
-                  id="female"
-                  formControlName="gender"
-                  value="female"
-                />
+                <label for="female">Female</label>
+                <div>
+                  <input
+                    type="radio"
+                    id="female"
+                    formControlName="gender"
+                    value="female"
+                  />
+                </div>
+              </div>
+              <div *ngIf="obj.only_female">
+                <label for="female">Female</label>
+                <div>
+                  <input
+                    type="radio"
+                    id="female"
+                    formControlName="gender"
+                    value="female"
+                    [checked]="true"
+                  />
+                </div>
               </div>
             </div>
             <div class="age">

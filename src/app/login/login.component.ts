@@ -9,13 +9,9 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  email: string = '';
-  password: string = '';
   loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private auth: AuthService) {}
-
-  ngOnInit(): void {
+  constructor(private fb: FormBuilder, private auth: AuthService) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: [
@@ -31,18 +27,24 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  ngOnInit(): void {}
+  get email() {
+    return this.loginForm.get('email');
+  }
+
+  get password() {
+    return this.loginForm.get('password');
+  }
+
   login() {
-    if (this.email == '') {
-      alert('please enter email');
-      return;
+    if (this.loginForm.valid) {
+      const email = this.loginForm.value.email;
+      const password = this.loginForm.value.password;
+      this.auth.login(email, password);
+      console.log(`Email: ${email}, Password: ${password}`);
+      this.loginForm.reset();
+    } else {
+      alert('Please enter valid email and password');
     }
-    if (this.password == '') {
-      alert('please enter password');
-      return;
-    }
-    this.auth.login(this.email, this.password);
-    this.email = '';
-    this.password = '';
-    this.loginForm.reset();
   }
 }
